@@ -12,7 +12,7 @@ if __name__ == '__main__':
         cs = game.croupiers_turn()
         game.who_is_winner(ps, cs)
     except GameOverPlayer:
-        print('You crossed the limit of 21 scores.\nGAME OVER!!!')
+        print(f'You got {game.players[0].score} score and crossed the limit of 21 scores.\nGAME OVER!!!')
     except GameOverCroupier:
-        print('Croupier crossed the limit of 21 scores.\nPlayer won!')
+        print(f'Croupier got {game.players[1].score} score and crossed the limit of 21 scores.\nPlayer won!')
 
