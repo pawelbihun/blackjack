@@ -84,10 +84,10 @@ class Game:
     @staticmethod
     def who_is_winner(player_score, croupier_score):
         if player_score == 21:
-            print('Player is the winner! You scored 21 points!')
+            print('\nPlayer is the winner! You scored 21 points!')
         elif player_score == croupier_score:
-            print('Draw')
+            print('\nDraw')
         elif player_score > croupier_score:
-            print('Player is the winner!')
+            print('\nPlayer is the winner!')
         else:
-            print('Croupier is the winner!')
+            print('\nCroupier is the winner!')
