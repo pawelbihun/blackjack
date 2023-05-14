@@ -1,3 +1,4 @@
+"""Playing modul - starting file"""
 import os
 
 from game import Game, GameOverPlayer, GameOverCroupier

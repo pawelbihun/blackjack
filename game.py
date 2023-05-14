@@ -2,8 +2,6 @@ from deck import Deck
 from player import Player
 
 
-
-
 class GameOverPlayer(Exception):
     """ Game over player.
     """
@@ -82,7 +80,7 @@ class Game:
         return False
 
     @staticmethod
-    def who_is_winner(player_score, croupier_score):
+    def who_is_winner(player_score, croupier_score) -> None:
         if player_score == 21:
             print('\nPlayer is the winner! You scored 21 points!')
         elif player_score == croupier_score:
