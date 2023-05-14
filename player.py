@@ -8,14 +8,15 @@ class Player:
     def __init__(self, name: str):
         self.name: str = name
         self.score: int = 0
-        self.my_cards: list = []
+        self.my_cards: list[Card] = []
         self.loser = False
 
     def add_score(self) -> None:
         self.score = self.calculate_scores()
 
     def show_cards(self) -> None:
-        return self.my_cards
+        print(f'{self.name}, this are your cards:')
+        print(self.my_cards)
 
     def take_card(self, new_card: Card) -> None:
         self.my_cards.append(new_card)

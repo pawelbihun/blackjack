@@ -29,4 +29,7 @@ class Card:
         self.suit = self.possible_suits[suit]
 
     def __repr__(self) -> str:
-        return f'{self.number_or_face}{self.suit}'
+        return f'{self.number_or_face}{self.suit} '
+
+    def __str__(self) -> str:
+        return f'{self.number_or_face}{self.suit} '
