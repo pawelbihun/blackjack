@@ -20,7 +20,7 @@ class TestCard:
             assert message == 'Invalid card suit'
 
     def test_card_representation(self):
-        assert repr(Card('2', 'clubs')) == '2♣'
-        assert repr(Card('2', 'spades')) == '2♠'
-        assert repr(Card('2', 'hearts')) == '2♥'
-        assert repr(Card('2', 'diamonds')) == '2♦'
+        assert repr(Card('2', 'clubs')) == '2♣ '
+        assert repr(Card('2', 'spades')) == '2♠ '
+        assert repr(Card('2', 'hearts')) == '2♥ '
+        assert repr(Card('2', 'diamonds')) == '2♦ '
